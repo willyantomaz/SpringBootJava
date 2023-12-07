@@ -6,8 +6,6 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import medic.alura.demo.Especialidade;
-import medic.alura.demo.MedicoModel;
-import medic.alura.demo.endereco.DadosEndereco;
 import medic.alura.demo.endereco.Endereco;
 
 @Table(name = "medicos")
