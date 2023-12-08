@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import medic.alura.demo.Especialidade;
 import medic.alura.demo.endereco.Endereco;
 
 @Table(name = "medicos")
@@ -50,6 +49,9 @@ public class Medico {
         }
         if(atualizaMedico.dadosEndereco() != null){
             this.endereco.atualizarEndereco(atualizaMedico.dadosEndereco());
+        }
+        if(atualizaMedico.ativo() != null){
+            this.ativo = atualizaMedico.ativo();
         }
     }
 

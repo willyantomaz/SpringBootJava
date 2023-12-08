@@ -30,6 +30,7 @@ public class Endereco {
 
     }
 
+
     public void atualizarEndereco(DadosEndereco dadosEndereco) {
         if(dadosEndereco.logradouro() != null){
             this.logradouro = dadosEndereco.logradouro();

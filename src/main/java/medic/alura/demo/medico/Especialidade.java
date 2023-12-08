@@ -1,4 +1,4 @@
-package medic.alura.demo;
+package medic.alura.demo.medico;
 
 public enum Especialidade {
     ORTOPEDIA,
