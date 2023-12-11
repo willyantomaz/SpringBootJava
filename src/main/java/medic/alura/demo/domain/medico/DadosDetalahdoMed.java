@@ -1,6 +1,6 @@
-package medic.alura.demo.medico;
+package medic.alura.demo.domain.medico;
 
-import medic.alura.demo.endereco.Endereco;
+import medic.alura.demo.domain.endereco.Endereco;
 
 public record DadosDetalahdoMed(Long id, String nome, String email, String crm, Especialidade especialidade, Endereco endereco) {
 

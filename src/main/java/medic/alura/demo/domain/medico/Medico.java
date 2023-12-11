@@ -1,11 +1,11 @@
-package medic.alura.demo.medico;
+package medic.alura.demo.domain.medico;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import medic.alura.demo.endereco.Endereco;
+import medic.alura.demo.domain.endereco.Endereco;
 
 @Table(name = "medicos")
 @Entity(name = "Medicos")

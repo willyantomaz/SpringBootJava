@@ -1,4 +1,4 @@
-package medic.alura.demo.paciente;
+package medic.alura.demo.domain.paciente;
 
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
@@ -7,7 +7,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import lombok.*;
-import medic.alura.demo.endereco.Endereco;
+import medic.alura.demo.domain.endereco.Endereco;
 
 
 @Table(name = "pacientes")
@@ -36,6 +36,12 @@ public class Paciente {
     private Endereco endereco;
     private boolean ativo = true;
 
+    public Paciente(Paciente paciente) {
+        this(paciente.getId(),paciente.getNome(), paciente.getCpf(),
+                paciente.getTelefone(),
+                paciente.getEmail(),paciente.getEndereco(),paciente.isAtivo());
+    }
+
     public void atualizaPaci(DadosAtualizaPaciente atualizaPaciente){
         if(atualizaPaciente.nome() != null){
             this.nome = atualizaPaciente.nome();
@@ -60,6 +66,5 @@ public class Paciente {
     public void inativarPaciente(){
         this.ativo = false;
     }
-
 
 }

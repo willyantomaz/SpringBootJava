@@ -1,4 +1,4 @@
-package medic.alura.demo.paciente;
+package medic.alura.demo.domain.paciente;
 
 
 public record DadosListagemPaciente(Long id,String nome, String cpf, String telefone, String email) {

@@ -1,4 +1,4 @@
-package medic.alura.demo.paciente;
+package medic.alura.demo.domain.paciente;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

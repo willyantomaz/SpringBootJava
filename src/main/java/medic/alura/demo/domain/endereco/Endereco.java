@@ -1,4 +1,4 @@
-package medic.alura.demo.endereco;
+package medic.alura.demo.domain.endereco;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
